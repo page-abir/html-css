@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salad Cafe!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Hachi+Maru+Pop&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="images/logo.png" alt="" class="logo">
+                <ul class="main-nav animate__slideInDown" id="show-hide">
+                    <li><a href="#">DELIVERY</a></li>
+                    <li><a href="#">ORDER</a></li>
+                    <li><a href="#">MORE</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                </ul>
+                <a href="#" class="mb-icon" onclick="show()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+
+        <div class="main-content-header">
+            <h1>welcome to <span class="change-color">salad cafe</span>!</h1>
+            <p>one stop station for salad lovers.</p>
+            <a href="#" class="btn btn-1">click to order</a>
+            <a href="#" class="btn btn-2">explore</a>
+        </div>
+    </header>
+
+    <script type="text/javascript">
+        function show() {
+            var menu = document.getElementById('show-hide');
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
